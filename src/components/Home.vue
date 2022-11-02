@@ -1,24 +1,17 @@
 <template>
-  <div class="app">
-    <HomeVue />
+  <div>
+    <HeaderVue />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import HomeVue from "./components/Home.vue";
+import HeaderVue from "./Header/Header.vue";
 
 export default defineComponent({
   name: "AppVue",
   components: {
-    HomeVue,
+    HeaderVue,
   },
 });
 </script>
-
-<style scoped>
-.app {
-  width: 100%;
-  height: 100vh;
-}
-</style>
